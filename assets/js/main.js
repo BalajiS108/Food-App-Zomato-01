@@ -382,8 +382,8 @@ const handleIcons = (scrollVal) => {
 arrowIcons.forEach((icon) => {
   icon.addEventListener('click', () => {
     // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
-    const iconId = icon.id === 'left' ? -180 : 180;
-    const scrollWidth = tabsBox.scrollLeft + iconId;
+    tabsBox.scrollLeft += icon.id === 'left' ? -180 : 180;
+    const scrollWidth = tabsBox.scrollLeft;
     handleIcons(scrollWidth);
   });
 });
@@ -407,12 +407,13 @@ const dragStop = () => {
   tabsBox.classList.remove('dragging');
 };
 
-const dragStart = () => {
-  isDragging = true;
-  return isDragging;
-};
+// const dragStart = (e) => {
+//   isDragging = true;
+//   dragging(e);
+// };
 
-tabsBox.addEventListener('mousedown', dragStart); // Not understood
+// eslint-disable-next-line no-return-assign
+tabsBox.addEventListener('mousedown', () => (isDragging = true)); // Not understood
 tabsBox.addEventListener('mousemove', dragging); // Not understood
 document.addEventListener('mouseup', dragStop); // Not understood
 
@@ -430,8 +431,9 @@ const handleIcons1 = (scrollVal) => {
 arrowIcons1.forEach((icon1) => {
   icon1.addEventListener('click', () => {
     // if clicked icon is left, reduce 350 from tabsBox scrollLeft else add
-    const iconId1 = icon1.id === 'left' ? -180 : 180;
-    const scrollWidth = tabsBox1.scrollLeft + iconId1;
+    // const iconId1 = icon1.id === 'left' ? -180 : 180;
+    tabsBox1.scrollLeft += icon1.id === 'left' ? -180 : 180;
+    const scrollWidth = tabsBox1.scrollLeft;
     handleIcons1(scrollWidth);
   });
 });
@@ -446,7 +448,7 @@ allTabs1.forEach((tab1) => {
 let isDragging1 = false;
 
 const dragging1 = (e) => {
-  if (!isDragging) return;
+  if (!isDragging1) return;
   tabsBox1.classList.add('dragging1');
   tabsBox1.scrollLeft -= e.movementX; // Not understood
   handleIcons1(tabsBox1.scrollLeft);
