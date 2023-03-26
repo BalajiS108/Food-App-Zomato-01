@@ -1,7 +1,7 @@
 {
-  "name": "vanilla-js-boilerplate",
+  "name":"Food App Zomato 01",
   "version": "1.0.0",
-  "description": "This is a Vanilla JS boilerplate with ESLint, Prettier, Husky & important tooling",
+  "description": "THis is a Zomato Clone App",
   "main": "index.js",
   "type": "module",
   "scripts": {
@@ -17,7 +17,7 @@
     "vanilla",
     "boilerplate"
   ],
-  "author": "xdankit",
+  "author": "Balaji Sawant",
   "license": "MIT",
   "devDependencies": {
     "eslint": "^8.36.0",
