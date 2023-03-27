@@ -469,7 +469,7 @@ tabsBox1.addEventListener('mousemove', dragging1); // Not understood
 document.addEventListener('mouseup', dragStop1); // Not understood
 
 // ---Responsive code-----
-function logInDisplay() {
+const logInDisplay = () => {
   const login = document.getElementById('log-in');
   login.classList.toggle('log-in-display-responsive');
   const elem1 = document.getElementById('service-type');
@@ -489,4 +489,7 @@ function logInDisplay() {
   elem6.classList.toggle('empty');
   elem7.classList.toggle('empty');
   elem8.classList.toggle('empty');
-}
+};
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', logInDisplay);

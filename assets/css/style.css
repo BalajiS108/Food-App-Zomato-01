@@ -128,10 +128,15 @@ display:none;
 .location-details-last{
     color: rgb(207, 207, 207);
 }
+.service-type-main-main{
+  position: sticky;
+  top:0px;
+}
 
 .service-type-main{
   max-width:1100px;
   margin:0px auto;
+  position: relative;
 
 }
 
@@ -209,7 +214,7 @@ height: 100%;
  .special-main{
     background-color: rgb(255, 255, 255);
     position: relative;
-    padding: 33px 0px; 
+    padding: 33px 0px 0px 0px; 
     
 }
 .special{
