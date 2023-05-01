@@ -152,7 +152,7 @@ for (let i = 0; i < restaurantData.length; i++) {
   // var href = `./cards/card${i}`;
   cards.id = 'cards';
   cards.innerHTML = `
-  <a style=" text-decoration:none"href="./cards/card${i}.html" >
+   <a style="text-decoration:none"  href="./cards/card${i}.html" >
   <div class="image">
   <img
     alt="Restaurant Card"

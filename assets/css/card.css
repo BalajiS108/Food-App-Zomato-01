@@ -1,11 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 *{
     font-family: "Poppins", sans-serif; 
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
 }
-
-
-
-
 .hotel-img{
     display: flex;
     /* width:1000px; */
@@ -18,8 +17,6 @@
     margin-right:80px;
     box-sizing:border-box ;
     object-fit: cover;
-    
-
 }
 .first-img-less-width{
     overflow: hidden;
@@ -46,12 +43,7 @@
     cursor: pointer;
  
 }
-.middle-img .half-img1 img{
-    width:148px;
-    height:185px;
-    overflow: hidden;
-    /* display: flex; */
-}
+
 .half-img-compress{
     overflow: hidden;
 }
@@ -72,10 +64,7 @@
     transition: 0.3s ease-in-out;
 }
 .last-img{
-    position: relative;
-    
-  
-    
+    position: relative;    
 }
 .last-img img{
     width:250px;
