@@ -22,15 +22,7 @@
     <div class="main-conatiner">
       <div class="header-conatiner">
         <div class="logo">
-          <img
-            height="27px"
-            ;
-            width="127px"
-            ;
-            src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png"
-            alt=""
-            srcset=""
-          />
+          <img height="27px" ; width="127px" ; src="./assets/img/Screenshot_6.jpg" alt="" srcset="" />
         </div>
         <div class="location-search">
           <div class="location">
@@ -93,8 +85,34 @@
           <a href="">Log in</a>
           <a href="">Sign up</a>
         </div>
+        <div class="menu-responsive">
+          <button
+            id="btn"
+            style="
+              border: none;
+              margin-left: 10px;
+              padding: 4px 2px 0px 2px;
+              background-color: coral;
+              align-items: center;
+            "
+          >
+            <span class="material-symbols-outlined"> menu </span>
+          </button>
+        </div>
       </div>
-      <div class="location-details">
+      <div id="log-in" class="log-in-display">
+        <div class="login-item">Log In</div>
+        <div class="login-item">Sign Up</div>
+      </div>
+      <!-- -------------------------Responsive----------------- -->
+      <div class="location-details-responsive">
+        <div class="location-details-responsive-inside">Home</div>
+        <div class="location-details-responsive-inside">India</div>
+        <div class="location-details-responsive-inside">Pune</div>
+        <div class="location-details-responsive-inside">Vishal Nagar,Wakad Restaurants</div>
+        <!-- ---------------------------Responsive----------------------- -->
+      </div>
+      <div id="l-d" class="location-details">
         <div class="location-detail">Home</div>
 
         <span class="location-detail">/</span>
@@ -107,107 +125,114 @@
         <span class="location-details-last"> Vishal Nagar, Wakad Restaurants</span>
       </div>
     </div>
-    <div class="service-type-main">
-      <div class="service-type">
-        <div class="delivery">
-          <div class="logos logos-background-color-pink">
-            <img
-              alt="illustration"
-              src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
-              loading="lazy"
-            />
+    <div class="service-type-main-main">
+      <div id="service-type" class="service-type-main">
+        <div class="service-type">
+          <div class="delivery">
+            <div class="logos logos-background-color-pink">
+              <img
+                alt="illustration"
+                src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
+                loading="lazy"
+              />
+            </div>
+            <span>Delivery</span>
           </div>
-          <span>Delivery</span>
-        </div>
-        <div class="dining">
-          <div class="logos logos-background-color-gray">
-            <img
-              alt="illustration"
-              src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp"
-              loading="lazy"
-            />
+          <div class="dining">
+            <div class="logos logos-background-color-gray">
+              <img
+                alt="illustration"
+                src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp"
+                loading="lazy"
+              />
+            </div>
+            <span>Dining Out</span>
           </div>
-          <span>Dining Out</span>
-        </div>
-        <div class="night-life">
-          <div class="logos logos-background-color-gray">
-            <img
-              alt="illustration"
-              src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp"
-              loading="lazy"
-            />
+          <div class="night-life">
+            <div class="logos logos-background-color-gray">
+              <img
+                alt="illustration"
+                src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp"
+                loading="lazy"
+              />
+            </div>
+            <span>NightLife</span>
           </div>
-          <span>NightLife</span>
         </div>
       </div>
     </div>
+    <!-- ------------Responsive service type starts here ------------- -->
 
-    <!-- <div class="special-container"> -->
-    <!-- <div class="special-main"> -->
-    <!-- <div class="special-main"> -->
-    <div class="special">
-      <div class="filter">
-        <div class="filter-logo">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="#9C9C9C"
-            width="18"
-            height="18"
-            viewBox="0 0 20 20"
-            aria-labelledby="icon-svg-title- icon-svg-desc-"
-            role="img"
-            class="sc-rbbb40-0 iwHbVQ"
-          >
-            <title>filter</title>
-            <path
-              d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"
-            ></path>
-          </svg>
-          Filters
+    <!-- ------------Responsive ends here ------------- -->
+
+    <div class="special-container">
+      <!-- <div class="special-main-main"> -->
+      <div id="sp" class="special-main">
+        <div class="special">
+          <div class="filter">
+            <div class="filter-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#9C9C9C"
+                width="18"
+                height="18"
+                viewBox="0 0 20 20"
+                aria-labelledby="icon-svg-title- icon-svg-desc-"
+                role="img"
+                class="sc-rbbb40-0 iwHbVQ"
+              >
+                <title>filter</title>
+                <path
+                  d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"
+                ></path>
+              </svg>
+              Filters
+            </div>
+          </div>
+          <div class="rating">Rating: 4.0+</div>
+          <div class="pure-veg">Pure-Veg</div>
+          <div class="cuisines">
+            cuisines
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9C9C9C"
+              width="18"
+              height="18"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ"
+            >
+              <title>chevron-down</title>
+              <path
+                d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
+              ></path>
+            </svg>
+          </div>
+          <div class="more-filters">
+            More filters
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9C9C9C"
+              width="18"
+              height="18"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ"
+            >
+              <title>chevron-down</title>
+              <path
+                d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
+              ></path>
+            </svg>
+          </div>
         </div>
-      </div>
-      <div class="rating">Rating: 4.0+</div>
-      <div class="pure-veg">Pure-Veg</div>
-      <div class="cuisines">
-        cuisines
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#9C9C9C"
-          width="18"
-          height="18"
-          viewBox="0 0 20 20"
-          aria-labelledby="icon-svg-title- icon-svg-desc-"
-          role="img"
-          class="sc-rbbb40-0 iwHbVQ"
-        >
-          <title>chevron-down</title>
-          <path
-            d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
-          ></path>
-        </svg>
-      </div>
-      <div class="more-filters">
-        More filters
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          fill="#9C9C9C"
-          width="18"
-          height="18"
-          viewBox="0 0 20 20"
-          aria-labelledby="icon-svg-title- icon-svg-desc-"
-          role="img"
-          class="sc-rbbb40-0 iwHbVQ"
-        >
-          <title>chevron-down</title>
-          <path
-            d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
-          ></path>
-        </svg>
       </div>
     </div>
 
     <!-- slider code starts-->
-    <div class="wrapper-main-container-0">
+    <div id="wmc" class="wrapper-main-container-0">
       <div class="wrapper">
         <!-- <div class="icon" id="left">
       <button>
@@ -216,7 +241,7 @@
         </span>
       </button>
     </div> -->
-        <h1>Inspiration for your First Order</h1>
+        <h1 class="wrapper-h1" style="margin-bottom: 40px">Inspiration for your First Order</h1>
         <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
         <ul id="tabs-box">
           <!-- <li class="tab">
@@ -426,8 +451,8 @@
     <!-- <div class="top-brands"> -->
 
     <!-- ------------------------------------------------ second Slider code starts here---------------------------------- -->
-    <div class="wrapper-main-1">
-      <div class="wrapper">
+    <div id="wm" class="wrapper-main-1">
+      <div class="wrapper1">
         <!-- <div class="icon" id="left">
          <button>
         <span class="material-symbols-outlined navigate">
@@ -435,7 +460,7 @@
         </span>
         </button>
        </div> -->
-        <h1>Top Brands for you</h1>
+        <h1 style="margin: 40px 0px">Top Brands for you</h1>
         <div class="icon1">
           <i id="left" class="fa-solid fa-angle-left"></i>
         </div>
@@ -745,8 +770,8 @@
     </div>  -->
 
     <!-- ---------------------------------------------------------------------------------------------------------------------- -->
-    <h1 class="delivery-restaurents">Delivery Restaurants in Vishal Nagar, Pimpri-Chinchwad</h1>
-    <div class="all-cards-container">
+    <h1 id="dr" class="delivery-restaurents">Delivery Restaurants in Vishal Nagar, Pimpri-Chinchwad</h1>
+    <div id="acc" class="all-cards-container">
       <div id="main-card-container">
         <!-- <div id="cards"> -->
         <!-- <div class="image">
@@ -820,7 +845,7 @@
       </div>
     </div>
 
-    <section-footer>
+    <section-footer id="foot" class="footer">
       <div class="end-search-result-main">
         <div class="inner-end-search-result">
           <div class="end-search-result">End of search results</div>
@@ -863,11 +888,7 @@
       <div class="footer-last-section-main">
         <div class="footer-inner-last-section-1">
           <div class="zoma-logo">
-            <img
-              src="https://b.zmtcdn.com/web_assets/b40b97e677bc7b2ca77c58c61db266fe1603954218.png?fit=around|198:42&amp;crop=198:42;*,*"
-              alt="Zomato logo"
-              class="sc-elhb8j-1 ixsoFB"
-            />
+            <img src="./assets/img/Screenshot_6.jpg" alt="Zoomatoo logo" class="sc-elhb8j-1 ixsoFB" />
           </div>
           <div class="india-world">
             <div class="india-logo">
@@ -904,9 +925,85 @@
             </div>
           </div>
         </div>
+        <!-- ------------------------Footer Responsive starts-------------->
+        <div class="footerlist-responsive">
+          <div class="zoma-logo">
+            <img src="./assets/img/Screenshot_6.jpg" alt="Zoomatoo logo" class="sc-elhb8j-1 ixsoFB" />
+          </div>
+          <div class="logos-responsive">
+            <div class="india-logo">
+              <div class="india-logo-img">
+                <img src="./assets/img/india-flag-icon.svg" alt="" />
+              </div>
+              <div>India</div>
+              <!-- <div> -->
+              <span class="material-symbols-outlined"> expand_more </span>
+              <!-- </div> -->
+            </div>
+            <div class="world-logo">
+              <div class="world-logo-img">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#1C1C1C"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 20 20"
+                  aria-labelledby="icon-svg-title- icon-svg-desc-"
+                  role="img"
+                  class="sc-rbbb40-0 iwHbVQ"
+                >
+                  <title>language-globe</title>
+                  <path
+                    d="M10 0c-5.523 0-10 4.477-10 10s4.477 10 10 10c5.523 0 10-4.477 10-10v0c-0.011-5.518-4.482-9.989-9.999-10h-0.001zM17.14 6.18h-3c-0.264-1.393-0.63-2.62-1.107-3.791l0.047 0.131c1.755 0.733 3.161 2.010 4.039 3.618l0.021 0.042zM18.1 10c-0.002 0.676-0.090 1.33-0.252 1.954l0.012-0.054h-3.44c0.059-0.57 0.092-1.231 0.092-1.9s-0.034-1.33-0.099-1.982l0.007 0.082h3.44c0.15 0.57 0.238 1.224 0.24 1.899v0.001zM1.9 10c0.002-0.676 0.090-1.33 0.252-1.954l-0.012 0.054h3.46c-0.059 0.57-0.092 1.231-0.092 1.9s0.034 1.33 0.099 1.982l-0.007-0.082h-3.46c-0.15-0.57-0.238-1.224-0.24-1.899v-0.001zM7.48 8.1h5.040c0.063 0.57 0.099 1.231 0.099 1.9s-0.036 1.33-0.107 1.981l0.007-0.081h-5.040c-0.063-0.57-0.099-1.231-0.099-1.9s0.036-1.33 0.107-1.981l-0.007 0.081zM10.76 1.9c0.603 1.228 1.106 2.657 1.436 4.152l0.024 0.128h-4.44c0.354-1.623 0.857-3.052 1.51-4.395l-0.050 0.115c0.24 0 0.5 0 0.76 0s0.48 0 0.76 0zM6.96 2.48c-0.445 1.051-0.825 2.291-1.079 3.576l-0.021 0.124h-3c0.899-1.65 2.305-2.927 4.007-3.64l0.053-0.020zM2.86 13.8h3c0.262 1.4 0.629 2.634 1.107 3.811l-0.047-0.131c-1.757-0.738-3.165-2.022-4.039-3.637l-0.021-0.043zM9.24 18.1c-0.605-1.234-1.108-2.67-1.437-4.172l-0.023-0.128h4.44c-0.352 1.63-0.855 3.066-1.51 4.415l0.050-0.115c-0.24 0-0.5 0-0.76 0s-0.48 0-0.76 0zM13.040 17.52c0.431-1.046 0.798-2.28 1.041-3.558l0.019-0.122h3.040c-0.902 1.642-2.308 2.912-4.006 3.62l-0.054 0.020z"
+                  ></path>
+                </svg>
+              </div>
+              <div>World</div>
+              <!-- <div> -->
+              <span class="material-symbols-outlined"> expand_more </span>
+              <!-- </div> -->
+            </div>
+          </div>
+          <div class="footer-lists-responsive">
+            <div class="list1-and-2-responsive">
+              <div class="list-main-1-responsive">
+                <div class="list-title">ABOUT ZOOMATO</div>
+                <div class="list-item">Who We Are</div>
+                <div class="list-item">Blog</div>
+                <div class="list-item">Work With Us</div>
+                <div class="list-item">Investor Reltions</div>
+                <div class="list-item">Report Fraud</div>
+                <div class="list-item">Contact Us</div>
+              </div>
+              <div class="list1-main-2-responsive">
+                <div class="list-title">ZOMAVERSE</div>
+                <div class="list-item">Zomatto</div>
+                <div class="list-item">Blinkit</div>
+                <div class="list-item">Feeding India</div>
+                <div class="list-item">Hyperpure</div>
+                <div class="list-item">Zomaland</div>
+              </div>
+            </div>
+            <div class="list3-and-4-responsive">
+              <div class="inner-list-3-responsive">
+                <div class="list-title">FOR RESTAURANTS</div>
+                <div class="list-item">Partner With Us</div>
+                <div class="list-item">Apps For You</div>
+              </div>
+              <div class="inner-list-4-responsive">
+                <div class="list-title">LEARN MORE</div>
+                <div class="list-item">Privacy</div>
+                <div class="list-item">Security</div>
+                <div class="list-item">Terms</div>
+                <div class="list-item">Sitemap</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- --------------------------Footer Responsive End----------- -->
         <div class="footerlists">
           <div class="list1-main">
-            <div class="list-title">ABOUT ZOMATO</div>
+            <div class="list-title">ABOUT ZOOMATO</div>
             <div class="list-item">Who We Are</div>
             <div class="list-item">Blog</div>
             <div class="list-item">Work With Us</div>
@@ -949,6 +1046,8 @@
         </div>
       </div>
     </section-footer>
+
+    <!-- <div class="empty"></div> -->
   </body>
   <script src="./assets/js/main.js" defer></script>
 </html>

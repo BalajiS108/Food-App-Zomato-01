@@ -1,7 +1,7 @@
 const restaurantData = [
   {
     id: 1,
-    rName: 'Ashapuri Dining Hall',
+    rName: 'Hotel Ronita Paratha',
     rDetails: 'North Indian,Rajasthani, Beverages,Snackes',
     rating: 3.7,
     dTime: 18,
@@ -13,7 +13,7 @@ const restaurantData = [
   },
   {
     id: 2,
-    rName: 'Hotel Ronita Paratha',
+    rName: 'Ashapuri Dining Hall',
     rDetails: 'North Indian',
     rating: 3.9,
     dTime: 34,
@@ -152,7 +152,7 @@ for (let i = 0; i < restaurantData.length; i++) {
   // var href = `./cards/card${i}`;
   cards.id = 'cards';
   cards.innerHTML = `
-  <a style=" text-decoration:none"href="./cards/card${i}.html" >
+   <a style="text-decoration:none"  href="./cards/card${i}.html" >
   <div class="image">
   <img
     alt="Restaurant Card"
@@ -320,8 +320,8 @@ const cardsForSlider2 = [
 
   {
     id: 4,
-    src: 'https://b.zmtcdn.com/data/brand_creatives/logos/82b5b6321860545a160e790d99ec6da3_1629438503.png?output-format=webp',
-    Name: 'Hyderabad House',
+    src: 'https://b.zmtcdn.com/data/brand_creatives/logos/5a27a3f43344ecdb49c575d0284ebc40_1629438578.png?output-format=webp',
+    Name: 'Rolls Mania',
     time: 25,
   },
 
@@ -467,3 +467,29 @@ const dragStart1 = () => {
 tabsBox1.addEventListener('mousedown', dragStart1); // Not understood
 tabsBox1.addEventListener('mousemove', dragging1); // Not understood
 document.addEventListener('mouseup', dragStop1); // Not understood
+
+// ---Responsive code-----
+const logInDisplay = () => {
+  const login = document.getElementById('log-in');
+  login.classList.toggle('log-in-display-responsive');
+  const elem1 = document.getElementById('service-type');
+  const elem2 = document.getElementById('l-d');
+  const elem3 = document.getElementById('sp');
+  const elem4 = document.getElementById('wmc');
+  const elem5 = document.getElementById('wm');
+  const elem6 = document.getElementById('dr');
+  const elem7 = document.getElementById('acc');
+  const elem8 = document.getElementById('foot');
+
+  elem1.classList.toggle('empty');
+  elem2.classList.toggle('empty');
+  elem3.classList.toggle('empty');
+  elem4.classList.toggle('empty');
+  elem5.classList.toggle('empty');
+  elem6.classList.toggle('empty');
+  elem7.classList.toggle('empty');
+  elem8.classList.toggle('empty');
+};
+
+const btn = document.getElementById('btn');
+btn.addEventListener('click', logInDisplay);
