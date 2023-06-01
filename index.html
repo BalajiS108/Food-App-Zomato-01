@@ -21,8 +21,8 @@
   <body>
     <div class="main-conatiner">
       <div class="header-conatiner">
-        <div class="logo">
-          <img height="27px" ; width="127px" ; src="./assets/img/Screenshot_6.jpg" alt="" srcset="" />
+        <div id="logo">
+          <img src="./assets/img/logo3.png" alt="" srcset="" />
         </div>
         <div class="location-search">
           <div class="location">
@@ -92,7 +92,7 @@
               border: none;
               margin-left: 10px;
               padding: 4px 2px 0px 2px;
-              background-color: coral;
+              background-color: #eda4a4f5;
               align-items: center;
             "
           >
@@ -100,32 +100,72 @@
           </button>
         </div>
       </div>
-      <div id="log-in" class="log-in-display">
+    </div>
+    <!-- <div id="log-in" class="log-in-display">
         <div class="login-item">Log In</div>
         <div class="login-item">Sign Up</div>
-      </div>
-      <!-- -------------------------Responsive----------------- -->
-      <div class="location-details-responsive">
-        <div class="location-details-responsive-inside">Home</div>
-        <div class="location-details-responsive-inside">India</div>
-        <div class="location-details-responsive-inside">Pune</div>
-        <div class="location-details-responsive-inside">Vishal Nagar,Wakad Restaurants</div>
-        <!-- ---------------------------Responsive----------------------- -->
-      </div>
-      <div id="l-d" class="location-details">
-        <div class="location-detail">Home</div>
-
-        <span class="location-detail">/</span>
-        <span class="location-detail">India</span>
-
-        <span class="location-detail">/</span>
-        <span class="location-detail">Pune</span>
-
-        <span class="location-detail">/</span>
-        <span class="location-details-last"> Vishal Nagar, Wakad Restaurants</span>
-      </div>
+      </div> -->
+    <!-- -------------------------Responsive----------------- -->
+    <div id="location-details-responsive">
+      <div class="location-details-responsive-inside">Home</div>
+      <div class="location-details-responsive-inside">India</div>
+      <div class="location-details-responsive-inside">Pune</div>
+      <div class="location-details-responsive-inside">Vishal Nagar,Wakad Restaurants</div>
+      <!-- ---------------------------Responsive----------------------- -->
     </div>
+    <div id="l-d" class="location-details">
+      <div class="location-detail">Home</div>
+
+      <span class="location-detail">/</span>
+      <span class="location-detail">India</span>
+
+      <span class="location-detail">/</span>
+      <span class="location-detail">Pune</span>
+
+      <span class="location-detail">/</span>
+      <span class="location-details-last"> Vishal Nagar, Wakad Restaurants</span>
+    </div>
+
     <div class="service-type-main-main">
+      <!-- <div class="service-type-main-main-responsive"> -->
+      <div id="service-type" class="service-type-main">
+        <div class="service-type">
+          <div class="delivery">
+            <div class="logos logos-background-color-pink">
+              <img
+                alt="illustration"
+                src="https://b.zmtcdn.com/data/o2_assets/c0bb85d3a6347b2ec070a8db694588261616149578.png?output-format=webp"
+                loading="lazy"
+              />
+            </div>
+            <span>Delivery</span>
+          </div>
+          <div class="dining">
+            <div class="logos logos-background-color-gray">
+              <img
+                alt="illustration"
+                src="https://b.zmtcdn.com/data/o2_assets/78d25215ff4c1299578ed36eefd5f39d1616149985.png?output-format=webp"
+                loading="lazy"
+              />
+            </div>
+            <span>Dining Out</span>
+          </div>
+          <div class="night-life">
+            <div class="logos logos-background-color-gray">
+              <img
+                alt="illustration"
+                src="https://b.zmtcdn.com/data/o2_assets/01040767e4943c398e38e3592bb1ba8a1616150142.png?output-format=webp"
+                loading="lazy"
+              />
+            </div>
+            <span>NightLife</span>
+          </div>
+        </div>
+      </div>
+      <!-- </div> -->
+    </div>
+    <!-- ------------Responsive service type starts here ------------- -->
+    <div class="service-type-main-main-responsive">
       <div id="service-type" class="service-type-main">
         <div class="service-type">
           <div class="delivery">
@@ -161,9 +201,50 @@
         </div>
       </div>
     </div>
-    <!-- ------------Responsive service type starts here ------------- -->
 
     <!-- ------------Responsive ends here ------------- -->
+
+    <!-- ------------------------Responsive location search starts here---- -->
+    <div class="location-search-responsive">
+      <div class="location-responsive">
+        <div class="logo-responsive">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="#EF4F5F"
+            width="15"
+            height="15"
+            viewBox="0 0 20 20"
+            aria-labelledby="icon-svg-title- icon-svg-desc-"
+            role="img"
+            class="sc-rbbb40-0 jKmKoK"
+          >
+            <title>location-fill</title>
+            <path
+              d="M10.2 0.42c-4.5 0-8.2 3.7-8.2 8.3 0 6.2 7.5 11.3 7.8 11.6 0.2 0.1 0.3 0.1 0.4 0.1s0.3 0 0.4-0.1c0.3-0.2 7.8-5.3 7.8-11.6 0.1-4.6-3.6-8.3-8.2-8.3zM10.2 11.42c-1.7 0-3-1.3-3-3s1.3-3 3-3c1.7 0 3 1.3 3 3s-1.3 3-3 3z"
+            ></path>
+          </svg>
+        </div>
+        <span>Baner,Pune</span>
+      </div>
+      <div class="search-responsive">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="#363636"
+          width="17"
+          height="17"
+          viewBox="0 0 20 20"
+          aria-labelledby="icon-svg-title- icon-svg-desc-"
+          role="img"
+          class="sc-rbbb40-0 fajqkJ"
+        >
+          <title>Search</title>
+          <path
+            d="M19.78 19.12l-3.88-3.9c1.28-1.6 2.080-3.6 2.080-5.8 0-5-3.98-9-8.98-9s-9 4-9 9c0 5 4 9 9 9 2.2 0 4.2-0.8 5.8-2.1l3.88 3.9c0.1 0.1 0.3 0.2 0.5 0.2s0.4-0.1 0.5-0.2c0.4-0.3 0.4-0.8 0.1-1.1zM1.5 9.42c0-4.1 3.4-7.5 7.5-7.5s7.48 3.4 7.48 7.5-3.38 7.5-7.48 7.5c-4.1 0-7.5-3.4-7.5-7.5z"
+          ></path>
+        </svg>
+      </div>
+    </div>
+    <!-- ------------------------Responsive location search ends here---- -->
 
     <div class="special-container">
       <!-- <div class="special-main-main"> -->
@@ -231,6 +312,76 @@
       </div>
     </div>
 
+    <!-- Special Container Responsiveness Starts here -->
+
+    <div class="special-container-responsive">
+      <!-- <div class="special-main-main"> -->
+      <div id="sp" class="special-main-responsive">
+        <div class="special-responsive">
+          <div class="filter">
+            <div class="filter-logo">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="#9C9C9C"
+                width="18"
+                height="18"
+                viewBox="0 0 20 20"
+                aria-labelledby="icon-svg-title- icon-svg-desc-"
+                role="img"
+                class="sc-rbbb40-0 iwHbVQ"
+              >
+                <title>filter</title>
+                <path
+                  d="M2.14 6.42h7.26c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h2.96c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001h-2.94c-0.341-1.226-1.447-2.11-2.76-2.11s-2.419 0.885-2.755 2.090l-0.005 0.020h-7.26c-0.343 0.059-0.6 0.355-0.6 0.71s0.257 0.651 0.596 0.709l0.004 0.001zM12.16 4.28c0.776 0.011 1.4 0.643 1.4 1.42 0 0.784-0.636 1.42-1.42 1.42-0.777 0-1.409-0.624-1.42-1.399l-0-0.001c-0-0.006-0-0.013-0-0.020 0-0.784 0.636-1.42 1.42-1.42 0.007 0 0.014 0 0.021 0l-0.001-0zM17.86 13.58h-7.24c-0.328-1.245-1.443-2.148-2.77-2.148s-2.442 0.903-2.766 2.128l-0.004 0.020h-2.94c-0.036-0.006-0.077-0.010-0.12-0.010-0.398 0-0.72 0.322-0.72 0.72s0.322 0.72 0.72 0.72c0.042 0 0.084-0.004 0.124-0.011l-0.004 0.001h2.96c0.353 1.207 1.45 2.074 2.75 2.074s2.397-0.867 2.745-2.054l0.005-0.020h7.26c0.343-0.059 0.6-0.355 0.6-0.71s-0.258-0.651-0.596-0.709l-0.004-0.001zM7.84 15.72c-0.776-0.011-1.4-0.643-1.4-1.42 0-0.784 0.636-1.42 1.42-1.42 0.777 0 1.409 0.624 1.42 1.399l0 0.001c0 0.006 0 0.013 0 0.020 0 0.784-0.636 1.42-1.42 1.42-0.007 0-0.014-0-0.021-0l0.001 0z"
+                ></path>
+              </svg>
+              Filters
+            </div>
+          </div>
+          <div class="rating">Rating: 4.0+</div>
+          <div class="pure-veg">Pure-Veg</div>
+          <div class="cuisines">
+            cuisines
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9C9C9C"
+              width="18"
+              height="18"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ"
+            >
+              <title>chevron-down</title>
+              <path
+                d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
+              ></path>
+            </svg>
+          </div>
+          <div class="more-filters">
+            More filters
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="#9C9C9C"
+              width="18"
+              height="18"
+              viewBox="0 0 20 20"
+              aria-labelledby="icon-svg-title- icon-svg-desc-"
+              role="img"
+              class="sc-rbbb40-0 iwHbVQ"
+            >
+              <title>chevron-down</title>
+              <path
+                d="M4.48 7.38c0.28-0.28 0.76-0.28 1.060 0l4.46 4.48 4.48-4.48c0.28-0.28 0.76-0.28 1.060 0s0.28 0.78 0 1.060l-5 5c-0.3 0.3-0.78 0.3-1.060 0l-5-5c-0.3-0.28-0.3-0.76 0-1.060z"
+              ></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Special Container Responsiveness ends here -->
+
     <!-- slider code starts-->
     <div id="wmc" class="wrapper-main-container-0">
       <div class="wrapper">
@@ -242,6 +393,7 @@
       </button>
     </div> -->
         <h1 class="wrapper-h1" style="margin-bottom: 40px">Inspiration for your First Order</h1>
+        <h3 class="wrapper-h1-responsive">Inspiration for your First Order</h3>
         <div class="icon"><i id="left" class="fa-solid fa-angle-left"></i></div>
         <ul id="tabs-box">
           <!-- <li class="tab">
@@ -460,7 +612,8 @@
         </span>
         </button>
        </div> -->
-        <h1 style="margin: 40px 0px">Top Brands for you</h1>
+        <h1 class="top-brands-title">Top Brands for you</h1>
+        <h3 class="top-brands-title-responsive">Top Brands for you</h3>
         <div class="icon1">
           <i id="left" class="fa-solid fa-angle-left"></i>
         </div>
@@ -559,6 +712,7 @@
         </ul>
         <div class="icon1">
           <i id="right" class="fa-solid fa-angle-right"></i>
+          <!-- <i id="right-1" class="fa-solid fa-angle-right"></i> -->
         </div>
       </div>
     </div>
@@ -771,6 +925,7 @@
 
     <!-- ---------------------------------------------------------------------------------------------------------------------- -->
     <h1 id="dr" class="delivery-restaurents">Delivery Restaurants in Vishal Nagar, Pimpri-Chinchwad</h1>
+    <h3 id="dr" class="delivery-restaurents-responsive">Delivery Restaurants in Vishal Nagar, Pimpri-Chinchwad</h3>
     <div id="acc" class="all-cards-container">
       <div id="main-card-container">
         <!-- <div id="cards"> -->
@@ -849,6 +1004,7 @@
       <div class="end-search-result-main">
         <div class="inner-end-search-result">
           <div class="end-search-result">End of search results</div>
+          <!-- <div class="end-search-result-responsive">End of search results</div> -->
           <div class="end-search-image">
             <img
               alt="End of search results"
@@ -859,9 +1015,28 @@
           </div>
         </div>
       </div>
+
+      <!-- --------------------------Responsive end -search-result-starts here--- -->
+      <div class="end-search-result-main-responsive">
+        <div class="inner-end-search-result-responsive">
+          <div class="end-search-result">End of search results</div>
+          <div class="end-search-image">
+            <img
+              alt="End of search results"
+              src="https://b.zmtcdn.com/web/assets/search/6d548ba48f0e4e4b46c19ad4b15a3f011615379209.jpeg"
+              loading="lazy"
+              class="sc-s1isp7-5 jvKTTF"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- --------------------------Responsive end -search-result-ends here--- -->
+
       <div class="explore-near-options-main">
         <div class="explore-near-options-main-inner">
-          <h1>Explore Options near me</h1>
+          <h1 class="explore-near-options-h1">Explore Options near me</h1>
+          <h3 class="explore-near-options-h1-responsive">Explore Options near me</h3>
         </div>
         <div class="explore-near-options">
           <ul style="list-style-type: none">
@@ -883,12 +1058,37 @@
             </div>
           </ul>
         </div>
+
+        <!-- ---------------explore near options responsive starts---------- -->
+
+        <div class="explore-near-options-responsive">
+          <ul style="list-style-type: none">
+            <div class="item-1">
+              <li>Popular cuisines near me</li>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="item-1">
+              <li>Popular restaurant types near me</li>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="item-1">
+              <li>Top Restaurant Chains</li>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+            <div class="item-1">
+              <li>Cities We Deliver To</li>
+              <span class="material-symbols-outlined"> expand_more </span>
+            </div>
+          </ul>
+        </div>
+
+        <!-- ----------------explore near options responsive ends---------- -->
       </div>
 
       <div class="footer-last-section-main">
         <div class="footer-inner-last-section-1">
           <div class="zoma-logo">
-            <img src="./assets/img/Screenshot_6.jpg" alt="Zoomatoo logo" class="sc-elhb8j-1 ixsoFB" />
+            <img src="./assets/img/logo3.png" alt="Zoomatoo logo" class="sc-elhb8j-1 ixsoFB" />
           </div>
           <div class="india-world">
             <div class="india-logo">
@@ -928,7 +1128,7 @@
         <!-- ------------------------Footer Responsive starts-------------->
         <div class="footerlist-responsive">
           <div class="zoma-logo">
-            <img src="./assets/img/Screenshot_6.jpg" alt="Zoomatoo logo" class="sc-elhb8j-1 ixsoFB" />
+            <img src="./assets/img/logo3.png" alt="Zoomatoo logo" class="sc-elhb8j-1 ixsoFB" />
           </div>
           <div class="logos-responsive">
             <div class="india-logo">
