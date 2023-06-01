@@ -161,10 +161,14 @@ for (let i = 0; i < restaurantData.length; i++) {
     class="sc-s1isp7-5 fyZwWD"
   />
 </div>
-<div class="promoted">${restaurantData[i].promoted}</div>
+<div class="promoted ">${restaurantData[i].promoted}</div>
+<div class="promoted-responsive ">${restaurantData[i].promoted}</div>
 <div class="pro-off">${restaurantData[i].proOff}</div>
+<div class="pro-off-responsive">${restaurantData[i].proOff}</div>
 <div class="standard-off">${restaurantData[i].standardOff}</div>
+<div class="standard-off-responsive">${restaurantData[i].standardOff}</div>
 <div class="d-time">${restaurantData[i].dTime} min</div>
+<div class="d-time-responsive">${restaurantData[i].dTime} min</div>
 <div class="r-name-ratings">
   <div class="r-name">${restaurantData[i].rName}</div>
   <div class="ratings">
@@ -187,8 +191,42 @@ for (let i = 0; i < restaurantData.length; i++) {
       </svg>
     </div>
   </div>
+
+  <div class="ratings-responsive">
+    <span>${restaurantData[i].rating}</span>
+    <span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="#FFFFFF"
+        width="0.6rem"
+        height="0.6rem"
+        viewBox="0 0 20 20"
+        aria-labelledby="icon-svg-title- icon-svg-desc-"
+        role="img"
+        class="sc-rbbb40-0 fauQLv"
+      >
+        <title>star-fill</title>
+        <path
+          d="M6.76 6.8l-6.38 0.96c-0.22 0.040-0.38 0.22-0.38 0.44 0 0.12 0.040 0.24 0.12 0.32v0l4.64 4.76-1.1 6.66c0 0.020 0 0.040 0 0.080 0 0.24 0.2 0.44 0.44 0.44 0.1 0 0.16-0.020 0.24-0.060v0l5.7-3.12 5.68 3.12c0.060 0.040 0.14 0.060 0.22 0.060 0.24 0 0.44-0.2 0.44-0.44 0-0.040 0-0.060 0-0.080v0l-1.1-6.66 4.64-4.76c0.080-0.080 0.12-0.2 0.12-0.32 0-0.22-0.16-0.4-0.36-0.44h-0.020l-6.38-0.96-2.96-6.18c-0.060-0.12-0.18-0.2-0.32-0.2s-0.26 0.080-0.32 0.2v0z"
+        ></path>
+      </svg>
+    </span>
+  </div>
+
+
 </div>
+
+
 <div class="r-details-price">
+  <div class="r-details">${restaurantData[i].rDetails}</div>
+  <div class="price">
+    <span class="material-symbols-outlined" style="font-size: 14px">
+      currency_rupee
+    </span>
+    <div>${restaurantData[i].price} for one </div>
+  </div>
+</div>
+<div class="r-details-price-responsive">
   <div class="r-details">${restaurantData[i].rDetails}</div>
   <div class="price">
     <span class="material-symbols-outlined" style="font-size: 14px">
@@ -274,6 +312,12 @@ const cardsForSlider1 = [
     src: 'https://b.zmtcdn.com/data/o2_assets/2b5a5b533473aada22015966f668e30e1633434990.png',
     itemName: 'Paratha',
   },
+
+  // {
+  //   id: 9,
+  //   src: 'https://b.zmtcdn.com/data/o2_assets/e444ade83eb22360b6ca79e6e777955f1632716661.png',
+  //   itemName: 'Fried Rice',
+  // },
 ];
 
 const sliderbox1 = document.getElementById('tabs-box');
@@ -281,11 +325,7 @@ for (let i = 0; i < cardsForSlider1.length; i++) {
   const slider1cards = document.createElement('li');
   slider1cards.className = 'tab';
   slider1cards.innerHTML = `<img
-style="border-radius: 50%"
-height="150 px"
-;
-width="150 px"
-;
+
 alt="image"
 src="${cardsForSlider1[i].src}"
 loading="lazy"
@@ -353,15 +393,17 @@ for (let j = 0; j < cardsForSlider2.length; j++) {
   slider2cards.className = 'tab1';
   slider2cards.innerHTML = `<div class="card2">
   <img
-    style="width: 140px; height: 140px; border-radius: 50%"
+    
     alt="McDonald's"
     src="${cardsForSlider2[j].src}"
     loading="lazy"
     class="sc"
   />
 </div>
+<div class="brands-name-time">
 <div class="brand-name">${cardsForSlider2[j].Name}</div>
-  <div class="card2-time">${cardsForSlider2[j].time}min</div>
+   
+  </div>
   `;
   sliderbox2.appendChild(slider2cards);
 }
@@ -468,28 +510,35 @@ tabsBox1.addEventListener('mousedown', dragStart1); // Not understood
 tabsBox1.addEventListener('mousemove', dragging1); // Not understood
 document.addEventListener('mouseup', dragStop1); // Not understood
 
-// ---Responsive code-----
-const logInDisplay = () => {
-  const login = document.getElementById('log-in');
-  login.classList.toggle('log-in-display-responsive');
-  const elem1 = document.getElementById('service-type');
-  const elem2 = document.getElementById('l-d');
-  const elem3 = document.getElementById('sp');
-  const elem4 = document.getElementById('wmc');
-  const elem5 = document.getElementById('wm');
-  const elem6 = document.getElementById('dr');
-  const elem7 = document.getElementById('acc');
-  const elem8 = document.getElementById('foot');
+const locationBlcok = document.getElementById('location-details-responsive');
 
-  elem1.classList.toggle('empty');
-  elem2.classList.toggle('empty');
-  elem3.classList.toggle('empty');
-  elem4.classList.toggle('empty');
-  elem5.classList.toggle('empty');
-  elem6.classList.toggle('empty');
-  elem7.classList.toggle('empty');
-  elem8.classList.toggle('empty');
+// ---Responsive code-----
+const locationDetails = () => {
+  if (locationBlcok.style.display === 'none') {
+    locationBlcok.style.display = 'block';
+  } else {
+    locationBlcok.style.display = 'none';
+  }
+
+  // const login = document.getElementById('log-in');
+  // login.classList.toggle('log-in-display-responsive');
+  // const elem1 = document.getElementById('service-type');
+  // const elem2 = document.getElementById('l-d');
+  // const elem3 = document.getElementById('sp');
+  // const elem4 = document.getElementById('wmc');
+  // const elem5 = document.getElementById('wm');
+  // const elem6 = document.getElementById('dr');
+  // const elem7 = document.getElementById('acc');
+  // const elem8 = document.getElementById('foot');
+  // elem1.classList.toggle('empty');
+  // elem2.classList.toggle('empty');
+  // elem3.classList.toggle('empty');
+  // elem4.classList.toggle('empty');
+  // elem5.classList.toggle('empty');
+  // elem6.classList.toggle('empty');
+  // elem7.classList.toggle('empty');
+  // elem8.classList.toggle('empty');
 };
 
 const btn = document.getElementById('btn');
-btn.addEventListener('click', logInDisplay);
+btn.addEventListener('click', locationDetails);
