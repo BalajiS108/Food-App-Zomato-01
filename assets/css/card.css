@@ -412,7 +412,8 @@
     .popup{
         display: none;
     }
-}
+    /* hj */
+
 
 @media screen and (min-width: 769px)
 {   .last-img-responsive{
