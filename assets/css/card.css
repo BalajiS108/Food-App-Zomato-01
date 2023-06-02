@@ -7,7 +7,7 @@
 }
 .hotel-img{
     display: flex;
-    max-width:1222px;
+    max-width:1100px;
     margin:0px auto;
     /* align-items: center; */
     /* width: 20%; */
@@ -121,7 +121,7 @@
     margin-bottom: 20px;
 }
 .hotel-ratings{
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
     display: flex;
     align-items: center;
@@ -130,7 +130,7 @@
 }
 
 .hotel-ratings-responsive{
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
     display: flex;
     flex-direction: column;
@@ -197,7 +197,7 @@
 }
 
 .h-details{
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
     margin-bottom: 4px; 
     margin-top: 20px;
@@ -205,7 +205,7 @@
 
 }
 .h-details-responsive{
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
     margin-bottom: 4px; 
     margin-top: 20px;
@@ -213,7 +213,7 @@
 
 }
 .h-location{
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
     margin-bottom: 4px; 
     margin-top: 20px;
@@ -222,8 +222,8 @@
 .h-timings{
     display: flex;
     align-items: center;
-    justify-content: center;
-    max-width: 1222px;
+    /* justify-content: center; */
+    max-width: 1100px;
     margin: 0px auto;
     margin-bottom: 4px; 
     margin-top: 20px;
@@ -248,7 +248,7 @@
 
 .share-direction-bookmark{
     
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
     display: flex;
     align-items: center;
@@ -338,11 +338,11 @@
     height:100%;
 }
 .overview-list-main{
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
 }
 .overview-list{
-    max-width: 1222px;
+    max-width: 1100px;
     margin: 0px auto;
     list-style-type: none;
     display: flex;
@@ -362,6 +362,7 @@
 
 @media (max-width:769px)
 {
+   
     .last-img{
         display: none;
     }
@@ -389,18 +390,21 @@
     .h-timings{
         display: flex;
         align-items: center;
-        justify-content: center;
-        max-width: 1222px;
+        /* justify-content: center; */
+        max-width: 1100px;
         margin: 0px auto;
         margin-bottom: 4px; 
         margin-top: 20px;
         color: rgb(156, 156, 156);
-        margin-left: 5px;
+        /* margin-left: 5px; */
     
     }
-    .share-direction-bookmark{
-        margin-left: 5px;
+    /* .share-direction-bookmark{
+        /* margin-left: 5px; */
 
+    } */
+    .hotel-img{
+        margin-left:5px;
     }
     .popup-responsive{
         display:none;
@@ -432,11 +436,12 @@
     .location-details-responsive-card0{
         display: none;
     }
-    .popup{
+    /* .popup{
         display: none;
     }
     .popup-responsive{
         display:none;
-    }
+    } */
+   
 
 }
