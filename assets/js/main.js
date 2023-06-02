@@ -236,6 +236,7 @@ for (let i = 0; i < restaurantData.length; i++) {
   </div>
 </div>
 <div class="safe-protocol">
+<div class="incr-img-last-msg">
   <div class="incr-img">
     <img
       width="18px"
@@ -247,6 +248,7 @@ for (let i = 0; i < restaurantData.length; i++) {
     />
   </div>
   <div class="last-msg">5425+ orders placed from here recently</div>
+  </div>
   <div class="safety-img">
     <img
       width="48px"
